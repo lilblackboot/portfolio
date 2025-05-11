@@ -28,6 +28,9 @@ function page() {
                 </button></a>
               </div>
             </div>
+            <div className="btmbar h-[30px] text-white absolute bottom-0 left-0 w-full py-15 px-10 bg-gradient-to-t from-black to-transparent">
+                
+            </div>
           </div>
     </>
   )
