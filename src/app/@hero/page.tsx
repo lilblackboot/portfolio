@@ -22,7 +22,6 @@ function Main() {
     }).to(".vi-mask-group", {
       scale: 10,
       duration: 2,
-      delay: -1.8,
       ease: "Expo.easeInOut",
       transformOrigin: "50% 50%",
       opacity: 0,
@@ -41,26 +40,26 @@ function Main() {
   useGSAP(() => {
     if (!showContent) return;
 
-    gsap.to(".main", {
-      scale: 1,
-      rotate: 0,
-      duration: 2,
-      ease: "Expo.easeInOut",
-    });
+    // gsap.to(".main", {
+    //   scale: 1,
+    //   rotate: 0,
+    //   duration: 2,
+    //   ease: "Expo.easeInOut",
+    // });
 
-    gsap.to([".sky", ".bg"], {
-      scale: 1.1,
-      rotate: 0,
-      duration: 2,
-      ease: "Expo.easeInOut",
-    });
+    // gsap.to([".sky", ".bg"], {
+    //   scale: 1.1,
+    //   rotate: 0,
+    //   duration: 2,
+    //   ease: "Expo.easeInOut",
+    // });
 
-    gsap.to(".text", {
-      scale: 1,
-      rotate: 0,
-      duration: 2,
-      ease: "Expo.easeInOut",
-    });
+    // gsap.to(".text", {
+    //   scale: 1,
+    //   rotate: 0,
+    //   duration: 2,
+    //   ease: "Expo.easeInOut",
+    // });
 
     const main = document.querySelector(".main");
     const handleMouseMove = (event: Event) => {
@@ -84,7 +83,7 @@ function Main() {
       
 
       {/* Initial SVG Mask Loader */}
-      <div className="svg flex items-center justify-center fixed top-0 left-0 z-[100] w-full h-screen overflow-hidden bg-[#000]">
+      {/* <div className="svg flex items-center justify-center fixed top-0 left-0 z-[100] w-full h-screen overflow-hidden bg-[#000]">
         <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
           <defs>
             <mask id="viMask">
@@ -112,11 +111,11 @@ function Main() {
             mask="url(#viMask)"
           />
         </svg>
-      </div>
+      </div> */}
 
       {/* Main content after animation */}
-      {showContent && (
-        <div className="main w-full rotate-[-10deg] scale-[1.7]">
+      
+        <div className="main w-full">
           <div className="landing overflow-hidden relative w-full h-screen bg-black">
             {/* Navbar */}
             <div className="navbar absolute top-0 left-0 z-[10] w-full py-10 px-10">
@@ -124,7 +123,7 @@ function Main() {
                 <h3 className="text-4xl -mt-[8px] leading-none text-white">
                   Web Developer
                 </h3>
-                <div className="lines flex flex-col gap-[5px]">
+                <div className="lines  flex flex-col gap-[5px]">
                   <div className="line w-15 h-2 bg-white"></div>
                   <div className="line w-8 h-2 bg-white"></div>
                   <div className="line w-5 h-2 bg-white"></div>
@@ -135,18 +134,18 @@ function Main() {
             {/* Background Images & Text */}
             <div className="imagesdiv relative overflow-hidden w-full h-screen">
               <img
-                className="absolute sky scale-[1.5] rotate-[-20deg] top-0 left-0 w-full h-full object-cover"
-                src="./sky.png"
+                className="absolute sky  scale-[1.25]  top-0 left-0 w-full h-full object-cover"
+                src="https://sdmntprwestus2.oaiusercontent.com/files/00000000-f5f0-61f8-b308-b4e3a93c09bd/raw?se=2025-05-31T09%3A03%3A01Z&sp=r&sv=2024-08-04&sr=b&scid=85d860ec-d901-51f0-ac30-70cfb77d0346&skoid=61180a4f-34a9-42b7-b76d-9ca47d89946d&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-30T23%3A21%3A46Z&ske=2025-05-31T23%3A21%3A46Z&sks=b&skv=2024-08-04&sig=KjCbzdkXMnFdEwIVzeBSUDhbfXPkV0fxerP/WhWNvJQ%3D"
                 alt=""
               />
-              <img
-                className="absolute scale-[1.8] rotate-[-3deg] bg top-0 left-0 w-full h-full object-cover"
+              {/* <img
+                className="absolute scale-50 bg top-0 left-0 w-full h-full object-cover"
                 src="./bg.png"
                 alt=""
-              />
-              <div className="text text-white flex flex-col gap-3 absolute top-20 left-1/2 -translate-x-1/2 scale-[1.5] rotate-[-10deg]">
-                <h1 className="text-[12rem] leading-none -ml-40">Suzan</h1>
-                <h1 className="text-[12rem] leading-none ml-30">Mansuri</h1>
+              /> */}
+              <div className="text text-white flex flex-col gap-3 absolute top-20 left-1/2 -translate-x-1/2 ">
+                <h1 className="text-[10rem] leading-none -ml-40">Suzan</h1>
+                <h1 className="text-[10rem] leading-none ml-30">Mansuri</h1>
                 <h1 className="text-[12rem] leading-none -ml-40">lilblackboot</h1>
               </div>
               {/* <img
@@ -170,7 +169,7 @@ function Main() {
           {/* About Section */}
           
         </div>
-      )}
+      
     </>
   );
 }
