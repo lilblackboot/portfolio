@@ -55,15 +55,6 @@ function Main() {
       ease: "Expo.easeInOut",
     });
 
-    gsap.to(".character", {
-      scale: 1.1,
-      x: "-50%",
-      bottom: "-50%",
-      rotate: 0,
-      duration: 2,
-      ease: "Expo.easeInOut",
-    });
-
     gsap.to(".text", {
       scale: 1,
       rotate: 0,
