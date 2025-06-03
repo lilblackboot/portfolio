@@ -1,8 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 import { Montserrat } from 'next/font/google'
-import Link from 'next/link'
-import * as m from "motion/react-client"
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -11,14 +9,13 @@ const montserrat = Montserrat({
 function Card() {
   return (
     <>
-    <m.div
-    //  whileHover={{ scale: 1.2 }}
-    // whileTap={{ scale: 0.8 }}
+    <div
+    
     className={montserrat.className + '  bg-white p-2 rounded-xl shadow-lg flex flex-col mx-auto items-start '}>
       <Image src="/GoGuide.png" alt="Project Image" width={500} height={300} className="rounded-lg shadow-lg"/>
       <div className='px-2 w-full'><h3 className='text-2xl flex justify-between font-bold mt-4  '>GoGuide <a href='https://rough-kangaroo-559.notion.site/GoGuide-Smart-Campus-Navigator-2053398b6fdf8073a2e6d6e80dfdc273' target='_blank'><Arrow/></a>  </h3>
       <p>Smart Campus Navigator</p></div>
-    </m.div>
+    </div>
     </>
   )
 }

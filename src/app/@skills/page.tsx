@@ -9,14 +9,14 @@ const montserrat = Montserrat({
 function page() {
   return (
     <>
-    <section id='skills' className="w-full gap-25 min-h-screen h-content flex-col flex items-center justify-center bg-black relative">
-        <h1 className="text-8xl stroke-4  text-white">
+      <section id='skills' className="w-full min-h-screen gap-20 flex flex-col items-center justify-center bg-black relative px-4 sm:px-8 py-10">
+        <h1 className="text-5xl sm:text-5xl md:text-7xl font-bold text-white mb-10 text-center">
           Skills
         </h1>
-        <div className={`flex gap-6 justify-center px-20 items-baseline-last text-white ${montserrat.className}`}>
-          <div className="flex w-1/3  flex-col items-center">
-            
-            <div className="flex flex-wrap  border-gray-300 gap-3 justify-center">
+        <div className={`flex flex-col md:flex-row gap-10 md:gap-6 sm:items-baseline-last justify-center items-stretch w-full max-w-6xl text-white ${montserrat.className}`}>
+          {/* Frontend */}
+          <div className="flex-1 flex flex-col items-center mb-8 md:mb-0">
+            <div className="flex flex-wrap gap-3 justify-center">
               <SkillTab label="React" />
               <SkillTab label="Next.js" />
               <SkillTab label="Tailwind CSS" />
@@ -28,10 +28,10 @@ function page() {
               <SkillTab label="Framer Motion" />
               <SkillTab label="GSAP" />
             </div>
-            <h3 className="text-l my-4 text-gray-400">Frontend</h3>
+            <h3 className="text-base sm:text-lg my-4 text-gray-400">Frontend</h3>
           </div>
-          <div className="flex w-1/3  flex-col items-center">
-            
+          {/* Backend */}
+          <div className="flex-1 flex flex-col items-center mb-8 md:mb-0">
             <div className="flex flex-wrap gap-3 justify-center">
               <SkillTab label="Node.js" />
               <SkillTab label="Express.js" />
@@ -40,30 +40,31 @@ function page() {
               <SkillTab label="Firebase" />
               <SkillTab label="REST APIs" />
               <SkillTab label="Prisma" />
-            </div><h3 className="text-l my-4 text-gray-400">Backend</h3>
+            </div>
+            <h3 className="text-base sm:text-lg my-4 text-gray-400">Backend</h3>
           </div>
-          <div className="flex w-1/3  flex-col items-center">
-            
+          {/* Others */}
+          <div className="flex-1 flex flex-col items-center">
             <div className="flex flex-wrap gap-3 justify-center">
               <SkillTab label="Git" />
               <SkillTab label="Figma" />
-             
               <SkillTab label="Jest" />
               <SkillTab label="Vercel" />
               <SkillTab label="Linux" />
               <SkillTab label="Postman" />
-              
             </div>
-            <h3 className="text-l my-4 text-gray-400">Others</h3>
+            <h3 className="text-base sm:text-lg my-4 text-gray-400">Others</h3>
           </div>
         </div>
-      </section></>
+      </section>
+    </>
   )
 }
+
 // Skill tab component
 function SkillTab({ label }: { label: string }) {
   return (
-    <span className="px-4 py-2 text-gray-100 rounded-full border border-gray-100 font-semibold text-base shadow hover:bg-yellow-400 hover:border-yellow-400 hover:text-black transition-all duration-200 cursor-default">
+    <span className="px-4 py-2 text-gray-100 rounded-full border border-gray-100 font-semibold text-sm sm:text-base shadow hover:bg-yellow-400 hover:border-yellow-400 hover:text-black transition-all duration-200 cursor-default">
       {label}
     </span>
   )

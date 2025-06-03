@@ -25,12 +25,12 @@ export default function RootLayout({
   children,about,contacts,hero,projects,skills,stats
 }: Readonly<{
   children: React.ReactNode;
-  about?: React.ReactNode;
-  contacts?: React.ReactNode;
-  hero?: React.ReactNode;
-  projects?: React.ReactNode;
-  skills?: React.ReactNode;
-  stats?: React.ReactNode;
+  about: React.ReactNode;
+  contacts: React.ReactNode;
+  hero: React.ReactNode;
+  projects: React.ReactNode;
+  skills: React.ReactNode;
+  stats: React.ReactNode;
 }>) {
   return (
     <html lang="en" >
