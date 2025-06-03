@@ -22,16 +22,28 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
+  children,about,contacts,hero,projects,skills,stats
 }: Readonly<{
   children: React.ReactNode;
+  about?: React.ReactNode;
+  contacts?: React.ReactNode;
+  hero?: React.ReactNode;
+  projects?: React.ReactNode;
+  skills?: React.ReactNode;
+  stats?: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" >
       <body
-        className={` ${montserrat.variable}  antialiased`}
+        className={` ${montserrat.variable} bg-black  antialiased`}
       >
         {children}
+        {hero}
+        {about}
+        {skills}
+        {projects}
+        {stats}
+        {contacts}
       </body>
     </html>
   );

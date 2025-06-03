@@ -5,8 +5,8 @@ function Stats() {
 
 
   return (
-    <div className='min-h-screen bg-white  pb-5 h-fit '>
-        <h1 className='p-15 bg-gradient-to-b text-center w-full text-8xl'>Stats & Certies</h1>
+    <div className='min-h-screen bg-gradient-to-b from-gray-800 via-gray-700 to-gray-600  pb-5 h-fit '>
+        <h1 className='p-15 bg-gradient-to-b text-white text-center w-full text-8xl'>Stats & Certies</h1>
       <div className=' mx-7 flex gap-18 w-1/2  items-center justify-center flex-wrap'>
          <a href="https://leetcode.com/lilblackboot" target="_blank" rel="noopener noreferrer">
           <img  
