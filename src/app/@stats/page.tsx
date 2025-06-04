@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 
 function Stats() {
   return (
@@ -15,13 +14,11 @@ function Stats() {
           className="w-full md:w-1/2 flex justify-center"
         >
           <div className="mx-auto mt-6 w-full max-w-xs sm:max-w-sm md:max-w-md relative aspect-[2/1]">
-            <Image
+            <img
               src="https://leetcard.jacoblin.cool/lilblackboot?theme=light&font=montserrat&extension=heatmap"
               alt="LeetCode Stats"
-              fill
-              className="object-contain"
-              sizes="(max-width: 768px) 100vw, 50vw"
-              priority
+              className="object-contain w-full h-full"
+              style={{ aspectRatio: "2 / 1" }}
             />
           </div>
         </a>
@@ -32,13 +29,11 @@ function Stats() {
           className="w-full md:w-1/2 flex justify-center"
         >
           <div className="mx-auto mt-6 w-full max-w-xs sm:max-w-sm md:max-w-md relative aspect-[2/1]">
-            <Image
+            <img
               src="https://github-readme-stats.vercel.app/api?username=lilblackboot&show_icons=true&theme=light"
               alt="GitHub Stats"
-              fill
-              className="object-contain"
-              sizes="(max-width: 768px) 100vw, 50vw"
-              priority
+              className="object-contain w-full h-full"
+              style={{ aspectRatio: "2 / 1" }}
             />
           </div>
         </a>
