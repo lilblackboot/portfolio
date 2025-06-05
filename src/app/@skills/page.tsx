@@ -35,6 +35,7 @@ function page() {
             <div className="flex flex-wrap gap-3 justify-center">
               <SkillTab label="Node.js" />
               <SkillTab label="Express.js" />
+              <SkillTab label="Socket.IO" />
               <SkillTab label="MongoDB" />
               <SkillTab label="PostgreSQL" />
               <SkillTab label="Firebase" />
@@ -52,6 +53,7 @@ function page() {
               <SkillTab label="Vercel" />
               <SkillTab label="Linux" />
               <SkillTab label="Postman" />
+              <SkillTab label="Render" />
             </div>
             <h3 className="text-base sm:text-lg my-4 text-gray-400">Others</h3>
           </div>
