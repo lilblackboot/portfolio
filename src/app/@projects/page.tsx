@@ -1,14 +1,6 @@
 import React from 'react'
-import { CircleArrowRight } from 'lucide-react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { Montserrat } from 'next/font/google';
 import Card from '@/app/components/Card';
 
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-});
 
 const Projects = () => {
   return (
