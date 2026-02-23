@@ -64,7 +64,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl md:text-7xl font-bold mb-6"
+            className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6"
           >
             <span className="gradient-text">Suzan Mansuri</span>
           </motion.h1>
@@ -73,7 +73,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-2xl md:text-3xl text-gray-300 mb-8"
+            className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-8"
           >
             Software Developer & <span className="text-accent-pink">Designer</span>
           </motion.div>
@@ -82,7 +82,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-lg text-gray-400 max-w-2xl mx-auto mb-12"
+            className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto mb-12 px-4"
           >
             Motivated Computer Science student specializing in AI with expertise in 
             Next.js, React Native, and Generative AI integration.
@@ -92,26 +92,26 @@ const Hero = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4"
           >
             <motion.a
               href="#contact"
-              className="px-8 py-4 bg-gradient-to-r from-accent-green to-accent-pink rounded-full font-semibold text-black hover:shadow-lg hover:shadow-accent-green/25 transition-all duration-300 flex items-center gap-2"
+              className="px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-accent-green to-accent-pink rounded-full font-semibold text-black hover:shadow-lg hover:shadow-accent-green/25 transition-all duration-300 flex items-center gap-2 text-sm sm:text-base"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Get In Touch
-              <ExternalLink size={18} />
+              <ExternalLink size={18} className="w-4 h-4 sm:w-5 sm:h-5" />
             </motion.a>
             
             <motion.a
               href="#projects"
-              className="px-8 py-4 border border-gray-600 rounded-full font-semibold text-white hover:border-accent-pink hover:text-accent-pink transition-all duration-300 flex items-center gap-2"
+              className="px-6 py-3 sm:px-8 sm:py-4 border border-gray-600 rounded-full font-semibold text-white hover:border-accent-pink hover:text-accent-pink transition-all duration-300 flex items-center gap-2 text-sm sm:text-base"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               View Projects
-              <ArrowDown size={18} />
+              <ArrowDown size={18} className="w-4 h-4 sm:w-5 sm:h-5" />
             </motion.a>
           </motion.div>
 

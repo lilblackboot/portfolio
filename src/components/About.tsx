@@ -43,22 +43,23 @@ const About = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-accent-green to-accent-pink mx-auto"></div>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
+            className="space-y-6"
           >
-            <h3 className="text-2xl font-bold mb-4 text-accent-green">
+            <h3 className="text-xl md:text-2xl font-bold mb-4 text-accent-green">
               Professional Summary
             </h3>
-            <p className="text-gray-300 mb-6 leading-relaxed">
+            <p className="text-gray-300 mb-6 leading-relaxed text-sm md:text-base">
               Motivated Computer Science student specializing in AI with a strong track record 
               of delivering high-quality software solutions. Experience working with multiple 
               development teams and executing successful freelance projects.
             </p>
-            <p className="text-gray-300 mb-6 leading-relaxed">
+            <p className="text-gray-300 mb-6 leading-relaxed text-sm md:text-base">
               Expert in the modern JavaScript stack (Next.js, React Native) with a focus on 
               integrating Generative AI, SEO optimization, and creating responsive, 
               user-centric designs.
@@ -77,7 +78,7 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="grid grid-cols-2 gap-6"
+            className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6"
           >
             {highlights.map((item, index) => (
               <motion.div
@@ -87,10 +88,10 @@ const About = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.05 }}
-                className="bg-gray-900/50 p-6 rounded-xl border border-gray-800 hover:border-gray-700 transition-all duration-300"
+                className="bg-gray-900/50 p-4 md:p-6 rounded-xl border border-gray-800 hover:border-gray-700 transition-all duration-300"
               >
                 <div className="mb-4">{item.icon}</div>
-                <h4 className="text-lg font-semibold mb-2 text-white">{item.title}</h4>
+                <h4 className="text-base md:text-lg font-semibold mb-2 text-white">{item.title}</h4>
                 <p className="text-gray-400 text-sm">{item.description}</p>
               </motion.div>
             ))}
