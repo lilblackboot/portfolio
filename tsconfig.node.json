@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "lib": ["ES2022"],
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "strict": true,
+    "noEmit": true,
+    "types": ["node"]
+  },
+  "include": [
+    "*.config.js",
+    "*.config.ts",
+    "*.config.mjs",
+    "*.config.mts"
+  ],
+  "exclude": [
+    "node_modules",
+    ".next",
+    "out",
+    "build"
+  ]
+}
