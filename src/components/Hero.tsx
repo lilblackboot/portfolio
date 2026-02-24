@@ -5,50 +5,7 @@ import { ArrowDown, Download, ExternalLink } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated background shapes */}
-      <div className="absolute inset-0 overflow-hidden">
-        <motion.div
-          className="floating-shape bg-accent-green w-96 h-96 top-10 left-10"
-          animate={{
-            x: [0, 100, 0],
-            y: [0, -50, 0],
-            scale: [1, 1.1, 1],
-          }}
-          transition={{
-            duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
-        <motion.div
-          className="floating-shape bg-accent-pink w-80 h-80 bottom-10 right-10"
-          animate={{
-            x: [0, -80, 0],
-            y: [0, 60, 0],
-            scale: [1, 0.9, 1],
-          }}
-          transition={{
-            duration: 10,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
-        <motion.div
-          className="floating-shape bg-accent-orange w-64 h-64 top-1/2 left-1/3"
-          animate={{
-            x: [0, 60, 0],
-            y: [0, -30, 0],
-            scale: [1, 1.2, 1],
-          }}
-          transition={{
-            duration: 7,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
-      </div>
-
+    <section className="relative min-h-screen flex items-center justify-center bg-black">
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center">
           <motion.div
@@ -91,12 +48,12 @@ const Hero = () => {
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4"
           >
             <motion.a
               href="#contact"
-              className="px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-accent-green to-accent-pink rounded-full font-semibold text-black hover:shadow-lg hover:shadow-accent-green/25 transition-all duration-300 flex items-center gap-2 text-sm sm:text-base"
+              className="px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-green-400 via-pink-400 to-orange-400 rounded-full font-semibold text-black hover:shadow-lg hover:shadow-pink-400/25 transition-all duration-300 flex items-center gap-2 text-sm sm:text-base"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -106,7 +63,7 @@ const Hero = () => {
             
             <motion.a
               href="#projects"
-              className="px-6 py-3 sm:px-8 sm:py-4 border border-gray-600 rounded-full font-semibold text-white hover:border-accent-pink hover:text-accent-pink transition-all duration-300 flex items-center gap-2 text-sm sm:text-base"
+              className="px-6 py-3 sm:px-8 sm:py-4 border border-gray-600 rounded-full font-semibold text-white hover:border-pink-400 hover:text-pink-400 transition-all duration-300 flex items-center gap-2 text-sm sm:text-base"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
