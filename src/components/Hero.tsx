@@ -5,7 +5,7 @@ import { ArrowDown, ExternalLink } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center bg-black overflow-hidden">
+    <section className="relative min-h-screen flex items-center pt-30 bg-black overflow-hidden">
       {/* LBB Logo - Top Left */}
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
@@ -26,6 +26,55 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Mobile Image - First on mobile */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            className="relative lg:hidden flex justify-center items-center mb-8"
+          >
+            <div className="relative w-full max-w-xs">
+              {/* Glow effect behind image */}
+              <div className="absolute inset-0 bg-gradient-to-r from-green-400/20 via-pink-400/20 to-orange-400/20 rounded-full blur-3xl"></div>
+              
+              {/* Image container */}
+              <div className="relative z-10 rounded-full overflow-hidden border-2 border-gray-800 shadow-2xl">
+                <img
+                  src="/profile_image.jpg"
+                  alt="Suzan Mansuri"
+                  className="w-full h-auto object-cover mix-blend-screen opacity-90"
+                />
+              </div>
+              
+              {/* Floating elements */}
+              <motion.div
+                animate={{ 
+                  y: [0, -20, 0],
+                  rotate: [0, 5, 0]
+                }}
+                transition={{ 
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+                className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-green-400 to-pink-400 rounded-full opacity-60 blur-xl"
+              />
+              
+              <motion.div
+                animate={{ 
+                  y: [0, 20, 0],
+                  rotate: [0, -5, 0]
+                }}
+                transition={{ 
+                  duration: 5,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+                className="absolute -bottom-4 -left-4 w-20 h-20 bg-gradient-to-br from-orange-400 to-pink-400 rounded-full opacity-60 blur-xl"
+              />
+            </div>
+          </motion.div>
+
           {/* Left Content */}
           <div className="text-left">
             <motion.div
@@ -113,7 +162,7 @@ const Hero = () => {
             </motion.div>
           </div>
 
-          {/* Right Image */}
+          {/* Desktop Image - Hidden on mobile */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
