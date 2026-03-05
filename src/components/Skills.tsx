@@ -86,31 +86,6 @@ const Skills = () => {
             </motion.div>
           ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          viewport={{ once: true }}
-          className="mt-16 text-center"
-        >
-          <div className="inline-flex items-center gap-4 px-8 py-4 bg-gradient-to-r from-accent-green/20 to-accent-pink/20 rounded-full border border-gray-800">
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-accent-green rounded-full animate-pulse"></div>
-              <span className="text-gray-300">Always learning</span>
-            </div>
-            <div className="w-px h-6 bg-gray-700"></div>
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-accent-pink rounded-full animate-pulse"></div>
-              <span className="text-gray-300">Problem solving</span>
-            </div>
-            <div className="w-px h-6 bg-gray-700"></div>
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-accent-orange rounded-full animate-pulse"></div>
-              <span className="text-gray-300">Innovation driven</span>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
