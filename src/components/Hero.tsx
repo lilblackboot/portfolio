@@ -5,7 +5,7 @@ import { ArrowDown, ExternalLink } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-30 bg-black overflow-hidden">
+    <section className="relative min-h-screen flex items-center pt-20 bg-black overflow-hidden">
       {/* LBB Logo - Top Left */}
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
