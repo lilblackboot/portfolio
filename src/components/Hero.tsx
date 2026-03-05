@@ -3,6 +3,8 @@
 import { motion } from 'framer-motion';
 import { ArrowDown, ExternalLink } from 'lucide-react';
 
+
+
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-20 bg-black overflow-hidden">
@@ -220,7 +222,9 @@ const Hero = () => {
       >
         <ArrowDown className="text-gray-400" size={24} />
       </motion.div>
+     
     </section>
+   
   );
 };
 

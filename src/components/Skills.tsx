@@ -86,6 +86,7 @@ const Skills = () => {
             </motion.div>
           ))}
         </div>
+       
       </div>
     </section>
   );

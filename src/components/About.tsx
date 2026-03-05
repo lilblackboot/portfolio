@@ -2,6 +2,19 @@
 
 import { motion } from 'framer-motion';
 import { Code, Palette, Brain, Users } from 'lucide-react';
+import LogoLoop from './LogoLoop';
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiFigma, SiPython, SiGooglegemini, SiGithub } from 'react-icons/si';
+const techLogos = [
+  { node: <SiReact />, title: "React", href: "https://react.dev" },
+  { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
+  { node: <SiTypescript />, title: "TypeScript", href: "https://www.typescriptlang.org" },
+  { node: <SiFigma />, title: "Figma", href: "https://www.figma.com" },
+  { node: <SiPython />, title: "python", href: "https://www.python.org" },
+  { node: <SiTailwindcss />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
+  { node: <SiGooglegemini/>, title: "gemini", href: "https://gemini.google.com" },
+  { node: <SiGithub/>, title: "github", href: "https://github.com" },
+
+];
 
 const About = () => {
   const highlights = [
@@ -29,6 +42,7 @@ const About = () => {
 
   return (
     <section id="about" className="py-20 relative">
+       
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -97,6 +111,18 @@ const About = () => {
           </motion.div>
         </div>
       </div>
+       <div className="mt-40"> <LogoLoop
+        logos={techLogos}
+        speed={100}
+        direction="left"
+        logoHeight={60}
+        gap={60}
+        hoverSpeed={0}
+        scaleOnHover
+        fadeOut
+        fadeOutColor="#000"
+        ariaLabel="Technology partners"
+      /></div>
     </section>
   );
 };
