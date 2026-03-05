@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Download, Code, Briefcase, Users, Target } from 'lucide-react';
+import { Code, Palette, Brain, Users } from 'lucide-react';
 
 const About = () => {
   const highlights = [
@@ -11,19 +11,19 @@ const About = () => {
       description: "Writing maintainable and scalable code with best practices"
     },
     {
-      icon: <Briefcase className="text-accent-pink" size={24} />,
-      title: "Problem Solving",
-      description: "Analyzing complex challenges and implementing effective solutions"
+      icon: <Palette className="text-accent-pink" size={24} />,
+      title: "UI/UX Design",
+      description: "Creating beautiful and intuitive user interfaces"
     },
     {
-      icon: <Users className="text-accent-orange" size={24} />,
+      icon: <Brain className="text-accent-orange" size={24} />,
+      title: "AI Integration",
+      description: "Leveraging cutting-edge AI technologies in applications"
+    },
+    {
+      icon: <Users className="text-accent-purple" size={24} />,
       title: "Team Player",
       description: "Collaborating effectively with cross-functional teams"
-    },
-    {
-      icon: <Target className="text-accent-blue" size={24} />,
-      title: "Goal Oriented",
-      description: "Delivering high-quality results on time and within budget"
     }
   ];
 
@@ -64,25 +64,11 @@ const About = () => {
               user-centric designs.
             </p>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 gap-4">
               <div className="bg-gray-900/50 p-4 rounded-lg border border-gray-800">
                 <div className="text-accent-blue font-semibold mb-1">Location</div>
                 <div className="text-gray-400 text-sm">Vadodara, India</div>
               </div>
-              <motion.a
-                href="/Suzan_Mansuri_CV.pdf"
-                download="Suzan_Mansuri_CV.pdf"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="flex items-center justify-center gap-2 px-4 py-3 bg-gradient-to-r from-green-400 via-pink-500 to-orange-400 rounded-full font-semibold text-black hover:shadow-lg hover:shadow-pink-400/25 transition-all duration-300"
-              >
-                Download CV
-                <Download size={16} />
-              </motion.a>
             </div>
           </motion.div>
 
