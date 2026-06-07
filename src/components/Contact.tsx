@@ -6,20 +6,20 @@ import { Mail, Github, Linkedin } from 'lucide-react';
 const Contact = () => {
   const contactInfo = [
     {
-      icon: <Mail className="text-accent-green" size={20} />,
+      icon: <Mail className="text-accent-lime" size={20} />,
       label: "Email",
       value: "suzanmansuri.work@gmail.com",
       href: "mailto:suzanmansuri.work@gmail.com"
     },
   
     {
-      icon: <Github className="text-accent-purple" size={20} />,
+      icon: <Github className="text-accent-pink" size={20} />,
       label: "GitHub",
       value: "github.com/lilblackboot",
       href: "https://github.com/lilblackboot"
     },
     {
-      icon: <Linkedin className="text-accent-blue" size={20} />,
+      icon: <Linkedin className="text-accent-lime" size={20} />,
       label: "LinkedIn",
       value: "linkedin.com/in/suzanmansuri",
       href: "https://linkedin.com/in/suzanmansuri"
@@ -39,7 +39,7 @@ const Contact = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Get In <span className="gradient-text">Touch</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-green-400 to-pink-500 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#E7FE55] to-[#FBD4FE] mx-auto"></div>
           <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
             I'm always interested in hearing about new opportunities and exciting projects. 
             Feel free to reach out if you'd like to collaborate!
@@ -90,12 +90,12 @@ const Contact = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true }}
-            className="bg-gradient-to-r from-green-400/10 via-pink-400/10 to-orange-400/10 rounded-2xl border border-gray-800 p-6 sm:p-8 text-center"
+            className="bg-gradient-to-r from-[#E7FE55]/10 via-[#FBD4FE]/10 to-[#E7FE55]/10 rounded-2xl border border-gray-800 p-6 sm:p-8 text-center"
           >
             <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-white">Current Status</h3>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
               <div className="flex items-center gap-2 sm:gap-3">
-                <div className="w-3 sm:w-4 h-3 sm:h-4 bg-green-400 rounded-full animate-pulse"></div>
+                <div className="w-3 sm:w-4 h-3 sm:h-4 bg-[#E7FE55] rounded-full animate-pulse"></div>
                 <span className="text-gray-300 text-sm sm:text-base">Available for freelance projects</span>
               </div>
               <div className="hidden sm:block w-px h-4 sm:h-6 bg-gray-700"></div>

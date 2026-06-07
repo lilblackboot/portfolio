@@ -5,11 +5,11 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --accent-green: #00ff88;
-  --accent-pink: #ff006e;
-  --accent-orange: #ff6b35;
-  --accent-purple: #8b5cf6;
-  --accent-blue: #3b82f6;
+  --accent-lime: #E7FE55;
+  --accent-pink: #FBD4FE;
+  --accent-white: #F2F4FE;
+  --accent-black: #000000;
+  --accent-white-alt: #FFFFFF;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -47,7 +47,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-inter);
+  --font-sans: 'Geist', 'Geist Fallback';
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -91,28 +91,26 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Geist', sans-serif;
   overflow-x: hidden;
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, var(--accent-green), var(--accent-pink), var(--accent-orange));
+  background: linear-gradient(135deg, var(--accent-lime), var(--accent-pink));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.accent-green { color: var(--accent-green); }
+.accent-lime { color: var(--accent-lime); }
 .accent-pink { color: var(--accent-pink); }
-.accent-orange { color: var(--accent-orange); }
-.accent-purple { color: var(--accent-purple); }
-.accent-blue { color: var(--accent-blue); }
+.accent-white { color: var(--accent-white); }
+.accent-black { color: var(--accent-black); }
 
-.bg-accent-green { background-color: var(--accent-green); }
+.bg-accent-lime { background-color: var(--accent-lime); }
 .bg-accent-pink { background-color: var(--accent-pink); }
-.bg-accent-orange { background-color: var(--accent-orange); }
-.bg-accent-purple { background-color: var(--accent-purple); }
-.bg-accent-blue { background-color: var(--accent-blue); }
+.bg-accent-white { background-color: var(--accent-white); }
+.bg-accent-black { background-color: var(--accent-black); }
 
 .floating-shape {
   position: absolute;
