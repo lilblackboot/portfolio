@@ -19,7 +19,7 @@ const techLogos = [
 const About = () => {
   const highlights = [
     {
-      icon: <Code className="text-accent-lime" size={24} />,
+      icon: <Code className="text-accent-green" size={24} />,
       title: "Clean Code",
       description: "Writing maintainable and scalable code with best practices"
     },
@@ -29,12 +29,12 @@ const About = () => {
       description: "Creating beautiful and intuitive user interfaces"
     },
     {
-      icon: <Brain className="text-accent-lime" size={24} />,
+      icon: <Brain className="text-accent-orange" size={24} />,
       title: "AI Integration",
       description: "Leveraging cutting-edge AI technologies in applications"
     },
     {
-      icon: <Users className="text-accent-pink" size={24} />,
+      icon: <Users className="text-accent-purple" size={24} />,
       title: "Team Player",
       description: "Collaborating effectively with cross-functional teams"
     }
@@ -54,7 +54,7 @@ const About = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             About <span className="gradient-text">Me</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#E7FE55] to-[#FBD4FE] mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-accent-green to-accent-pink mx-auto"></div>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -64,7 +64,7 @@ const About = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold mb-4 text-accent-lime">
+            <h3 className="text-2xl font-bold mb-4 text-accent-green">
               Professional Summary
             </h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
@@ -80,7 +80,7 @@ const About = () => {
             
             <div className="grid grid-cols-1 gap-4">
               <div className="bg-gray-900/50 p-4 rounded-lg border border-gray-800">
-                <div className="text-accent-lime font-semibold mb-1">Location</div>
+                <div className="text-accent-blue font-semibold mb-1">Location</div>
                 <div className="text-gray-400 text-sm">Vadodara, India</div>
               </div>
             </div>

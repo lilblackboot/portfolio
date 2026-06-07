@@ -9,9 +9,9 @@ const ProjectsHome = () => {
       title: "goGuide — Campus Navigation System",
       description: "Developed a cross-platform (Mobile & Web) campus guide tailored for Parul University students. Built a responsive student dashboard and mobile interface to facilitate easy access to campus facilities and academic resources.",
       tech: ["React Native", "React", "TypeScript", "Firebase"],
-      icon: <Globe className="text-accent-lime" size={24} />,
+      icon: <Globe className="text-accent-green" size={24} />,
       features: ["Cross-platform", "Student Dashboard", "Campus Facilities", "Accessibility"],
-      color: "accent-lime",
+      color: "accent-green",
       detailUrl: "/goguide"
     },
     {
@@ -38,7 +38,7 @@ const ProjectsHome = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Featured <span className="gradient-text">Projects</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#E7FE55] to-[#FBD4FE] mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-accent-green to-accent-pink mx-auto"></div>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
