@@ -85,7 +85,7 @@ const Hero = () => {
               transition={{ duration: 0.8 }}
               className="mb-4"
             >
-              <span className="text-accent-lime text-lg font-medium">Hello, I'm</span>
+              <span className="text-accent-green text-lg font-medium">Hello, I'm</span>
             </motion.div>
 
             <motion.h1
@@ -124,7 +124,7 @@ const Hero = () => {
             >
               <motion.a
                 href="#contact"
-                className="px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-[#E7FE55] to-[#FBD4FE] rounded-full font-semibold text-black hover:shadow-lg hover:shadow-[#E7FE55]/25 transition-all duration-300 flex items-center justify-center gap-2 text-sm sm:text-base"
+                className="px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-green-400 via-pink-500 to-orange-400 rounded-full font-semibold text-black hover:shadow-lg hover:shadow-pink-400/25 transition-all duration-300 flex items-center justify-center gap-2 text-sm sm:text-base"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -150,7 +150,7 @@ const Hero = () => {
               className="mt-16 flex justify-start gap-6 text-gray-400"
             >
               <div className="text-center">
-                <div className="text-2xl font-bold text-accent-lime">2+</div>
+                <div className="text-2xl font-bold text-accent-green">2+</div>
                 <div className="text-sm">Years Experience</div>
               </div>
               <div className="text-center">
@@ -158,7 +158,7 @@ const Hero = () => {
                 <div className="text-sm">Projects Completed</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-accent-lime">5+</div>
+                <div className="text-2xl font-bold text-accent-orange">5+</div>
                 <div className="text-sm">Technologies</div>
               </div>
             </motion.div>

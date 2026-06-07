@@ -11,7 +11,7 @@ const Education = () => {
       institution: "Parul University",
       location: "Vadodara",
       period: "2026",
-      type: "accent-lime",
+      type: "accent-green",
       icon: <GraduationCap size={24} />
     },
     {
