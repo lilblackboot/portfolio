@@ -10,7 +10,7 @@ const Experience = () => {
       company: "Nishant Technologies",
       period: "October 2025 – Present",
       location: "Remote",
-      type: "accent-green",
+      type: "accent-lime",
       achievements: [
         "Spearheaded the integration of Generative AI models into client web and mobile applications to automate workflows and enhance feature intelligence.",
         "Developed scalable frontend architectures for high-performance dashboards using Next.js and React Native.",
@@ -44,7 +44,7 @@ const Experience = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Work <span className="gradient-text">Experience</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-accent-green to-accent-pink mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#E7FE55] to-[#FBD4FE] mx-auto"></div>
         </motion.div>
 
         <div className="max-w-4xl mx-auto">

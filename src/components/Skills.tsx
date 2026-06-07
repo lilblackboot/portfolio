@@ -6,7 +6,7 @@ const Skills = () => {
   const skillCategories = [
     {
       title: "Languages",
-      color: "accent-green",
+      color: "accent-lime",
       skills: ["TypeScript", "JavaScript", "HTML", "CSS", "Python"]
     },
     {
@@ -16,17 +16,17 @@ const Skills = () => {
     },
     {
       title: "Backend & Tools",
-      color: "accent-orange",
+      color: "accent-lime",
       skills: ["Firebase", "Generative AI", "Git", "GitHub", "Node.js"]
     },
     {
       title: "Design & Strategy",
-      color: "accent-purple",
+      color: "accent-pink",
       skills: ["Figma", "UI/UX Design", "SEO Optimization", "Branding", "Prototyping"]
     },
     {
       title: "Core Competencies",
-      color: "accent-blue",
+      color: "accent-lime",
       skills: ["Communication", "Team Collaboration", "Problem Solving", "Agile", "Project Management"]
     }
   ];
@@ -44,7 +44,7 @@ const Skills = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Technical <span className="gradient-text">Skills</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-accent-green to-accent-pink mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#E7FE55] to-[#FBD4FE] mx-auto"></div>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -74,10 +74,10 @@ const Skills = () => {
                     viewport={{ once: true }}
                     whileHover={{ 
                       scale: 1.1,
-                      backgroundColor: "var(--accent-green)",
-                      color: "var(--background)"
+                      backgroundColor: "#E7FE55",
+                      color: "#000000"
                     }}
-                    className="px-4 py-2 bg-gray-800 rounded-full text-sm text-gray-300 border border-gray-700 hover:border-accent-green transition-all duration-300 cursor-default"
+                    className="px-4 py-2 bg-gray-800 rounded-full text-sm text-gray-300 border border-gray-700 hover:border-[#E7FE55] transition-all duration-300 cursor-default"
                   >
                     {skill}
                   </motion.span>
