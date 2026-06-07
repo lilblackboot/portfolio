@@ -30,7 +30,6 @@ const Header = () => {
       openMenuButtonColor="#000"
       changeMenuColorOnOpen={true}
       colors={['#7c3aed', '#5b21b6']}
-      logoUrl="/logo.png"
       accentColor="#8b5cf6"
       isFixed={true}
       closeOnClickAway={true}
